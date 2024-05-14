@@ -1,0 +1,23 @@
+@APIURL=http://localhost:3001/api
+
+GET {{APIURL}}/reserved
+
+###
+
+POST {{APIURL}}/login
+Content-Type: application/json
+
+{
+    "username": "zahra@test.com",
+    "password": "pwd"
+}
+
+###
+
+PUT {{APIURL}}/submission
+Content-Type: application/json
+
+{
+    "plane" : [1,"bhi", "bho"],
+    "seats": ["15C", "15D", "15E"]
+}
